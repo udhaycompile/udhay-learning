@@ -176,7 +176,7 @@
         <div class="flex items-center justify-between">
           <div>
             <p class="text-xs font-bold text-slate-900">Udhay ("UB")</p>
-            <p class="text-[11px] text-slate-500">CSE '28 • MacBook Air M5</p>
+            <p class="text-[11px] text-slate-500">Computer Engineering '29 • MacBook Air M5</p>
           </div>
           <button onclick="lockApp()" class="text-xs font-semibold text-red-600 hover:text-red-700 px-2.5 py-1 rounded border border-red-200 bg-white">
             Sign Out
@@ -460,9 +460,9 @@
         <!-- Editable Contact Details Bar -->
         <div class="no-print card-shadow rounded-xl p-4 grid sm:grid-cols-4 gap-3">
           <input id="cv-email" type="text" value="udhay.ub.data@gmail.com" onchange="saveCVMeta()" placeholder="Email" class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900" />
-          <input id="cv-phone" type="text" value="+91 98765 XXXXX • Tamil Nadu" onchange="saveCVMeta()" placeholder="Phone" class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900" />
+          <input id="cv-phone" type="text" value="+91 8072237435 • Tamil Nadu" onchange="saveCVMeta()" placeholder="Phone" class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900" />
           <input id="cv-github" type="text" value="github.com/udhay-ub | linkedin.com/in/udhay-ub" onchange="saveCVMeta()" placeholder="GitHub URL" class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900" />
-          <input id="cv-college" type="text" value="B.E. Computer Science & Engineering (2024 – 2028)" onchange="saveCVMeta()" placeholder="College & Degree" class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900" />
+          <input id="cv-college" type="text" value="B.E. Computer Engineering (2025 – 2029)" onchange="saveCVMeta()" placeholder="College & Degree" class="bg-slate-50 border border-slate-300 rounded-lg px-3 py-1.5 text-xs text-slate-900" />
         </div>
 
         <!-- THE LIVE PRINTABLE ATS RESUME SHEET -->
@@ -474,7 +474,7 @@
             </div>
             <div class="text-right text-xs text-slate-700 space-y-0.5 font-medium">
               <div id="cv-out-email">udhay.ub.data@gmail.com</div>
-              <div id="cv-out-phone">+91 98765 XXXXX • Tamil Nadu, India</div>
+              <div id="cv-out-phone">+91 8072237435 • Tamil Nadu, India</div>
               <div id="cv-out-github" class="text-blue-700 font-semibold">github.com/udhay-ub | linkedin.com/in/udhay-ub</div>
             </div>
           </div>
@@ -497,7 +497,7 @@
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
               <h2 class="text-xs font-extrabold uppercase tracking-widest text-slate-900 border-b border-slate-300 pb-1 mb-1.5">Education</h2>
-              <p id="cv-out-college" class="text-xs font-bold text-slate-900">B.E. Computer Science & Engineering (2024 – 2028)</p>
+              <p id="cv-out-college" class="text-xs font-bold text-slate-900">B.E. Computer Engineering (2025 – 2029)</p>
               <p class="text-xs text-slate-600 mt-0.5">Focus: Cloud Data Engineering, Distributed Lakehouses, AI Vector Pipelines</p>
             </div>
             <div>
@@ -1211,9 +1211,9 @@
       geminiKey: '',
       cvMeta: {
         email: 'udhay.compiles@gmail.com',
-        phone: '+91 98765 XXXXX • Tamil Nadu, India',
+        phone: '+91 8072237435 • Tamil Nadu, India',
         github: 'github.com/udhaycompile | linkedin.com/in/udhaya-bala-c-k-a5a4a62b3',
-        college: 'B.E. Computer Science & Engineering (2024 – 2028)'
+        college: 'B.E. Computer Engineering (2025 – 2029)'
       }
     }));
 
@@ -1221,9 +1221,9 @@
     if (!state.cvMeta) {
       state.cvMeta = {
         email: 'udhay.compiles@gmail.com',
-        phone: '+91 98765 XXXXX • Tamil Nadu, India',
+        phone: '+91 8072237435 • Tamil Nadu, India',
         github: 'github.com/udhaycompile | linkedin.com/in/udhaya-bala-c-k-a5a4a62b3',
-        college: 'B.E. Computer Science & Engineering (2024 – 2028)'
+        college: 'B.E. Computer Engineering (2025 – 2029)'
       };
     }
 
@@ -1567,11 +1567,11 @@
 
       const summaryEl = document.getElementById('cv-summary-text');
       if (resumeMode === 'preview' || pct >= 70) {
-        summaryEl.textContent = "Cloud & AI Data Engineer (2028 CSE Graduate) with verified credentials across AWS, Google Cloud, Snowflake, and Databricks. Experienced in architecting Modern Lakehouses (Delta Lake, Apache Iceberg), High-Speed Engines (PySpark, DuckDB, Polars), Real-Time Kafka Streams, and Enterprise AI Vector RAG Pipelines.";
+        summaryEl.textContent = "Cloud & AI Data Engineer (Class of 2029) with verified credentials across AWS, Google Cloud, Snowflake, and Databricks. Experienced in architecting Modern Lakehouses (Delta Lake, Apache Iceberg), High-Speed Engines (PySpark, DuckDB, Polars), Real-Time Kafka Streams, and Enterprise AI Vector RAG Pipelines.";
       } else if (includedModules.length === 0) {
-        summaryEl.textContent = "Computer Science & Engineering undergraduate (Class of 2028) specializing in Cloud Data Engineering, SQL database optimization, and automated Python data pipelines. (Check off lessons or badges in Udhay's Learning to dynamically unlock verified skills & certs here!)";
+        summaryEl.textContent = "Computer Engineering undergraduate (Class of 2029) specializing in Cloud Data Engineering, SQL database optimization, and automated Python data pipelines. (Check off lessons or badges in Udhay's Learning to dynamically unlock verified skills & certs here!)";
       } else {
-        summaryEl.textContent = `Computer Science & Engineering candidate (2028) with hands-on Cloud & AI Data Engineering proficiency across ${includedModules.map(m => m.title.split('&')[0].trim()).slice(0, 5).join(', ')}. Proven ability to build automated, cost-optimized data pipelines on Apple Silicon, Google Colab, and AWS Cloud.`;
+        summaryEl.textContent = `Computer Engineering candidate (2029) with hands-on Cloud & AI Data Engineering proficiency across ${includedModules.map(m => m.title.split('&')[0].trim()).slice(0, 5).join(', ')}. Proven ability to build automated, cost-optimized data pipelines on Apple Silicon, Google Colab, and AWS Cloud.`;
       }
 
       const skillGroups = {
